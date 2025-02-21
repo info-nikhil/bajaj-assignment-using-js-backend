@@ -14,7 +14,7 @@ function App() {
     setErrorMessage('');
     try {
       JSON.parse(jsonData);
-      const res = await axios.post('https://bajaj-assignment-4gp5.onrender.com/bfhl', JSON.parse(jsonData));
+      const res = await axios.post('https://server-js-kf0n.onrender.com', JSON.parse(jsonData));
       setResponse(res.data);
     } catch (error) {
       console.error("Error:", error);
